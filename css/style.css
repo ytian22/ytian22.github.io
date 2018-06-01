@@ -619,6 +619,22 @@ nav a:hover {
 	
 }
 
+***************/
+.social-media {
+  background: transparent;
+  position: fixed;
+  display: none;
+}
+.social-media ul {
+  list-style-type: none;
+}
+.social-media ul li a {
+  color: rgba(0, 128, 128, 0.51);
+}
+.social-media ul li a:hover {
+  color: teal;
+}
+
 /* Sección 'Contacto' */
 #contacto {
 	background-color: #031427;
