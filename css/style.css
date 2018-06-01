@@ -386,9 +386,9 @@ main .about-me .social-networks .icon-social a:hover {
 /* Subtítulo del header */
 #contenidoHeader h2 {
 	font-weight: 300;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	color: #FFF;
-	line-height: 1em;
+	line-height: 1.1em;
 	letter-spacing: 0em;
 	padding: 0.5em 3em;
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
