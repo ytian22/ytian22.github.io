@@ -342,6 +342,31 @@ nav a:hover {
 	width: 15em;
 }
 
+.social-media {
+  background: transparent;
+  position: fixed;
+  display: none;
+}
+.social-media ul {
+  list-style-type: none;
+}
+.social-media ul li a {
+  color: rgba(0, 128, 128, 0.51);
+}
+.social-media ul li a:hover {
+  color: teal;
+}
+
+main .about-me .social-networks .icon-social {
+  padding: 1rem;
+}
+main .about-me .social-networks .icon-social a {
+  color: rgba(255, 255, 255, 0.7);
+}
+main .about-me .social-networks .icon-social a:hover {
+  color: white;
+}
+
 /* Título de la página en el header */
 #contenidoHeader h1 {
 	font-weight: 100;
@@ -361,10 +386,10 @@ nav a:hover {
 /* Subtítulo del header */
 #contenidoHeader h2 {
 	font-weight: 300;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	color: #FFF;
-	line-height: 0.8em;
-	letter-spacing: -0.04em;
+	line-height: 1em;
+	letter-spacing: 0em;
 	padding: 0.5em 3em;
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
@@ -382,14 +407,14 @@ nav a:hover {
 }
 
 /* Elemento H1 de cada una de la secciones (su título) */
-.seccion {
+.session {
 	font-weight: 100;
 	font-size: 2.8em;
 	text-align: center;
 }
 
 /* Línea inferior al título de cada sección */
-.borde {
+.edge {
 	width: 6em;
 	height: 0.25em;
 	background-color: #E0C5A4;
@@ -422,89 +447,7 @@ nav a:hover {
 	z-index: 0;
 }
 
-/* Degradado que se mostrará en el fondo de 'Skills' */
-#skillsFondo {
-	background: radial-gradient(circle, rgba(255,255,255,0.9), rgba(218, 219, 221,0.9));
-	padding-top: 5em;
-}
 
-/* Contenido de la sección */
-#skillsContenido {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-/* Título de Skills */
-#skillsContenido h1 {
-	font-weight: 300;
-}
-
-/* Barras de Skills */
-#bars {
-	width: 90vw;
-	max-width: 700px;
-	margin: 3em;
-}
-
-/* Porcentaje que se muestra en cada barra */
-.contador:after{
-	content: "%";
-}
-
-/* Cada una de las barras de skills */
-.skillbar {
-	position: relative;
-	display: block;
-	margin-bottom: 1.6em;
-	width: 100%;
-	background: rgba(193,193,193,0.7);
-	height: 2.7em;
-	border-radius: 3px;
-	transition: 0.4s linear;
-	transition-property: width, background-color;
-}
-
-.skillTitle {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 7em;
-	font-weight: bold;
-	font-size: 1em;
-	color: #ffffff;
-	background: #6adcfa;
-	border-top-left-radius: 3px;
-	border-bottom-left-radius: 3px;
-	text-align: center;
-}
-
-.skillTitle span {
-	display: block;
-	background: rgba(0, 0, 0, 0.1);
-	height: 2.7em;
-	line-height: 2.7em;
-	border-top-left-radius: 3px;
-	border-bottom-left-radius: 3px;
-}
-
-.skillBarra {
-	height: 2.7em;
-	width: 0px;
-	background: #6adcfa;
-	border-radius: 3px;
-}
-
-.porcentaje {
-	position: absolute;
-	right: 1em;
-	top: 0;
-	font-size: 1em;
-	height: 2.7em;
-	line-height: 2.7em;
-	color: rgba(0, 0, 0, 0.6);
-}
 
 /* Sección 'Portfolio' */
 #portfolio {
@@ -619,29 +562,6 @@ nav a:hover {
 	
 }
 
-***************/
-.social-media {
-  background: transparent;
-  position: fixed;
-  display: none;
-}
-.social-media ul {
-  list-style-type: none;
-}
-.social-media ul li a {
-  color: rgba(0, 128, 128, 0.51);
-}
-.social-media ul li a:hover {
-  color: teal;
-}
-
-/* Sección 'Contacto' */
-#contacto {
-	background-color: #031427;
-	padding: 1.5em;
-	text-align: center;
-	color: #D5D5D8;
-}
 
 /* Título de la sección */
 #contacto h1 {
