@@ -148,12 +148,6 @@ $(function() {
     });   
   }
 
-  // Por cada barra de skill se mostrará la animación
-  $('.skillbar').each(function(){
-    $(this).find('.skillBarra').animate({
-      width:$(this).attr('data-percent')
-    },4000);
-  });
 
   // También se mostrará una animación en el contador, que irá aumentando su valor
   $('.contador').each(function () {
@@ -185,26 +179,10 @@ $(function() {
     }
   });
 
-  // Cuando se pulse sobre el botón del menú para abrirlo o cerrarlo
-  $('#botonMenu').click(function() {
-    ocultarMenu();
-  });
-  
-    /*SMOOTH SCROLLING
-  -------------------*/
-  
-  $('a').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-    return false;
-});
-  
-/*END SMOOTH SCROLLING*/
+
   
 
   /*Animation TITLE Page*/
-  $('.title-intro').addClass('animated bounceInDown');
   
    $(document).foundation();
   
@@ -213,9 +191,6 @@ $(function() {
   and the position of the social media icon if presents.
   */
   var heightBrowser = window.innerHeight;
-  $('.about-me').css('min-height',heightBrowser);
-  
-  $('.title-intro h1').css('margin-top',(heightBrowser/2)-130);
   
   if($('.social').css('display') !== 'none'){
     $('.social-media').css('margin-top',(heightBrowser/2)-130);
