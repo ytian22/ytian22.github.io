@@ -9,12 +9,12 @@
 	transition-property: width, height;
 	-webkit-touch-callout: none;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	box-sizing: border-box;
 }
 
 body {
 	overflow-x: hidden !important;
 }
-
 
 header {
 	height: 100vh;
@@ -22,121 +22,68 @@ header {
 	overflow-x: hidden !important;
 }
 
-/* Botón basado en: https://codepen.io/designcouch/pen/Atyop */
-#botonMenu {
-	position: fixed;
-	z-index: 50;
-	-webkit-transform: rotate(0deg);
-	        transform: rotate(0deg);
-	transition: .5s ease-in-out;
-	cursor: pointer;
-	position: fixed;
-	width: 3em;
-	height: 3.5em;
-	margin: 1em;
-	margin-top: 2em;
+section {
+  padding: 0 15px;
+}
+@media screen only and (min-width: 641px) {
+  section {
+    padding: 0;
+  }
 }
 
-#botonMenu span {
-	display: block;
-	position: absolute;
-	height: 0.35em;
-	width: 100%;
-	background: #BEC8D3;
-	border-radius: 9px;
-	opacity: 1;
-	left: 0;
-	-webkit-transform: rotate(0deg);
-	        transform: rotate(0deg);
-	transition: 0.25s ease-in-out;
+
+
+header {
+  padding: 1.0rem 0;
+  position: fixed;
+  z-index: 800;
 }
 
-#botonMenu span:nth-child(1) {
-	top: 0;
+header .title-area {
+  padding-left: 10px;
+  border-left: 2px solid teal;
+}
+header .title-area h1 {
+  line-height: 1.2rem !important;
+  font-size: 1.6em !important;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+header .title-area h1 span.fa-flask {
+  line-height: 0 !important;
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+header .title-area h1 a {
+  padding: 0 !important;
+}
+header .title-area h2 {
+  color: grey;
+  line-height: 2rem !important;
+  font-size: 0.8rem !important;
+}
+header .top-bar-section .right li a:active {
+  -moz-box-shadow: inset teal  0 -1px 0 0;
+  -webkit-box-shadow: inset teal  0 -1px 0 0;
+  box-shadow: inset teal 0 -1px 0 0;
+}
+@media only screen and (min-width: 40.0625em) {
+  header .top-bar-section .right li a:hover {
+    -moz-box-shadow: inset teal  0 -1px 0 0;
+    -webkit-box-shadow: inset teal  0 -1px 0 0;
+    box-shadow: inset teal 0 -1px 0 0;
+  }
+}
+@media only screen and (max-width: 40.0625em) {
+  header .top-bar-section .right li a {
+    text-transform: uppercase;
+  }
+}
+header .top-bar-section .right li:nth-child(2) {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
 }
 
-#botonMenu span:nth-child(2),#botonMenu span:nth-child(3) {
-	top: 0.8em;
-}
-
-#botonMenu span:nth-child(4) {
-	top: 1.6em;
-}
-
-#botonMenu.open span:nth-child(1) {
-	top: 0.8em;
-	width: 0%;
-	left: 50%;
-}
-
-#botonMenu.open span:nth-child(2) {
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-#botonMenu.open span:nth-child(3) {
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}
-
-#botonMenu.open span:nth-child(4) {
-	top: 0.8em;
-	width: 0%;
-	left: 50%;
-}
-
-/* Menú de navegación */
-nav {
-	height: 100%;
-	width: 15em;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: -15em;
-	background-color: #051A30;
-	overflow-x: hidden;
-	transition: 0.5s;
-	padding-top: 5em;
-	z-index: 50;
-	transition: 0.5s;
-	display: flex;
-	flex-direction: column;
-}
-
-nav a {
-	font-size: 2em;
-	padding: 0.5em 1em;
-	text-decoration: none;
-	font-weight: 300;
-	letter-spacing: 0.01em;
-	color: #D5D5D8;
-	
-}
-
-nav a:hover {
-	background: #122C49;
-	transition: .2s ease-in;
-}
-
-@media (max-width: 768px) {
-	nav {
-		width: 100vw;
-		left: -100vw;
-		justify-content: space-around;
-		padding: 1em 0;
-		align-items: center;
-	}
-	nav a {
-		font-size: 2.5em;
-		padding: 0;
-	}
-
-	nav a:hover {
-		background: transparent;
-		color: #3D5A79;
-		transition: .2s ease-in;
-	}
-}
 
 /* Fondos con montañas del header */
 #fondo1 {
