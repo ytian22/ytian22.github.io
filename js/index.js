@@ -180,9 +180,23 @@ $(function() {
   });
 
 
+
+  
+  /*SMOOTH SCROLLING
+  -------------------*/
+  
+  $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+  
+/*END SMOOTH SCROLLING*/
   
 
   /*Animation TITLE Page*/
+  $('.title-intro').addClass('animated bounceInDown');
   
    $(document).foundation();
   
@@ -191,13 +205,16 @@ $(function() {
   and the position of the social media icon if presents.
   */
   var heightBrowser = window.innerHeight;
+  $('.about-me').css('min-height',heightBrowser);
+  
+  $('.title-intro h1').css('margin-top',(heightBrowser/2)-130);
   
   if($('.social').css('display') !== 'none'){
     $('.social-media').css('margin-top',(heightBrowser/2)-130);
  
   }
   
-    /*display SOCIAL MEDIA
+  /*display SOCIAL MEDIA
   --------------------------*/
   var dist;
   
@@ -211,6 +228,27 @@ $(function() {
       $('.social-media').css('display','none').removeClass('animated bounceIn');
     }
   });
+  
+  
+
+  
+  /*PORTFOLIO
+  --------------*/
+  
+  $('.more-info-btn').click(function(){
+    
+    $(this).next().slideToggle();
+    $(this).toggleClass("fa-minus");
+  
+  });
+
+
+
+  // Cuando se pulse sobre el botón del menú para abrirlo o cerrarlo
+  $('#botonMenu').click(function() {
+    ocultarMenu();
+  });
+
 
   /**
    * Función ocultarMenu
