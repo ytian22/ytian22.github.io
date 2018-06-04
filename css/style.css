@@ -9,6 +9,8 @@
   transition-property: width, height;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+
+  box-sizing: border-box;
 }
 
 body {
@@ -24,13 +26,8 @@ section {
   }
 }
 
-/*HEADER
+/*Nav Bar
 *************/
-header {
-  height: 100vh;
-  width: 100vw;
-  overflow-x: hidden !important;
-}
 
 .contain-to-grid {
   padding: 1.0rem 0;
@@ -38,9 +35,32 @@ header {
   z-index: 800;
 }
 
+.small-picture {
+  background: url("https://github.com/ytian22/ytian22.github.io/pic.jpg");
+  background-size: cover;
+  height: 12em;
+  width: 12em;
+  border-radius: 50%;
+}
+@media(min-width: 400px) {
+  .small-picture {
+    height: 14em;
+    width: 14em;
+  }
+}
+@media(min-width: 700px) {
+  .small-picture {
+    max-height: 20em;
+    max-width: 20em;
+    height: 30vw;
+    width: 30vw;
+  }
+}
+
 .title-area {
   padding-left: 10px;
 }
+
 .title-area h1 {
   line-height: 1.2rem !important;
   font-size: 1.6em !important;
@@ -54,6 +74,12 @@ header {
 .title-area h2 {
   color: grey;
   line-height: 2rem !important;
+  font-size: 1rem !important;
+}
+
+.top-bar-section .right li a{
+    color: grey;
+/*  line-height: 2rem !important;*/
   font-size: 1rem !important;
 }
 
@@ -84,6 +110,28 @@ header {
     bottom: -100px;
     width: 100%;
 }
+
+/*
+.social-networks .btn {
+  position: relative;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 12px 21px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.social-networks .btn {
+    border-radius: 7px;
+}
+
+.social-networks .btn:hover {background: white;}
+.resume {
+    border-color: #e7e7e7;
+    color: black;
+}*/
+
+
 
 .social-networks .icon-social {
   padding: 1rem;
@@ -117,43 +165,6 @@ header {
 /*
 CONTENT
 ***************/
-main .about-me {
-  background: url("http://users.skynet.be/fa341830/codepen/backgroundfolio.jpg") no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position-y: 30%;
-  border-bottom: 4px solid teal;
-}
-main .about-me .title-intro h1 {
-  font-family: VT323,arial, sans-serif;
-  color: white;
-  font-size: 2.5em;
-  border-bottom: 2px solid white;
-  text-align: center;
-}
-main .about-me .title-intro h1 .logo {
-  margin-right: 1rem;
-  font-size: 3em;
-  display: block;
-}
-@media screen and (min-width: 43.75em) {
-  main .about-me .title-intro h1 {
-    font-size: 3.5em;
-  }
-}
-@media screen and (min-width: 62.5em) {
-  main .about-me .title-intro h1 {
-    font-size: 5em;
-  }
-}
-main .about-me .title-intro h2 {
-  color: white;
-  font-size: 0.8em;
-  letter-spacing: 0.5em;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.3);
-}
-
 main section .row > h3 {
   color: grey;
   margin: 1rem 0;
@@ -238,21 +249,17 @@ main section .row > h3 {
   }
 }
 
-.about h4 {
-  margin: 1.2rem 0;
-  font-size: 1.4em;
-}
-@media screen and (min-width: 40.0625em) {
-  .about h4 {
-    margin: 0;
-  }
-}
 
 .contact .email {
   font-size: 2em;
 }
 
 
+header {
+  height: 150vh;
+  width: 100vw;
+  overflow-x: hidden !important;
+}
 /* Fondos con montañas del header */
 #fondo1 {
   background: url("../img/fondouno.png") no-repeat;
@@ -483,12 +490,21 @@ main section .row > h3 {
   padding: 0.5em 3em;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
+
+
+
+#social-about-padding {
+  background-color: #0A0618;
+  height: 3vh;
+  width: 100vw;
+
+}
 /* Sección 'Sobre mí' */
 #about {
   background-color: #0A0618;
   color: white;
-  padding: 20px;
-  text-align: center;
+  padding: 10px;
+  text-align: bottom center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -498,8 +514,9 @@ main section .row > h3 {
 /* Elemento H1 de cada una de la secciones (su título) */
 .seccion {
   font-weight: 100;
-  font-size: 2.8em;
+  font-size: 2.7em;
   text-align: center;
+  color: white;
 }
 
 /* Línea inferior al título de cada sección */
@@ -516,10 +533,14 @@ main section .row > h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 1.1em;
-  padding: 1.8em;
-  max-width: 800px;
+  padding: 1.2em;
+  max-width: 790px;
   letter-spacing: 0.08em;
   line-height: 1.5em;
+}
+
+#about b {
+    font-weight: bold;
 }
 
 /* Ilustración de 'Sobre mí' */
@@ -533,3 +554,24 @@ main section .row > h3 {
 .contador:after{
   content: "%";
 }
+
+
+@media (max-width: 768px) {
+  #contenidoHeader h1 {
+    font-size: 4em;
+  }
+
+  .ornamentCont {
+    width: 10em;
+  }
+
+  #contenidoHeader h2 {
+    font-size: 1.2em;
+  }
+
+  #about h1 {
+    font-size: 2.5em;
+  }
+}
+
+
