@@ -31,7 +31,7 @@ $(document).ready(function () {
     id: 4,
     title: "Time Series Analysis:<br>Canada’s Bankruptcy Rate Forecast",
     description: "Forecasted Canada’s monthly bankruptcy rate and achieved the lowest test RMSE of 0.0035.<br><b>Tools: R, Time Series Models (SARIMA, SARIMAX, Holt-Winters, VAR, VARX), GGplot.</b>",
-    demoUrl: "https://drive.google.com/drive/u/1/folders/1_dVRUV_y0H203m3dMgM7bVBB_VpK-iu5",
+    demoUrl: "https://drive.google.com/open?id=14SM7rupXNzhdb1ylBThCmvrj1Wosyoab",
     previewUrl: "img/bankruptcy.jpg",
     category: "data2"
   }, {
