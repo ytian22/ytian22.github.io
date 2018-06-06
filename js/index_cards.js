@@ -79,7 +79,7 @@ $(document).ready(function () {
   }, {
     id: 11,
     title: "Data Visualization Collection",
-    description: "A collection of all data visualization coursework.<br><b>Tools: Python, Plotly, Bokeh.",
+    description: "A collection of all data visualization coursework.<br><b>Tools: Python, Seaborn, Plotly, Bokeh, Tableau.",
     demoUrl: "https://github.com/ytian22/Data-Visualization-Collection",
     previewUrl: "img/collection.jpeg",
     category: "data5"

@@ -101,6 +101,11 @@ width: 152px;
     text-transform: uppercase;
   }
 }
+
+.top-bar-section .right li:nth-child(1) {
+  border-right: 1px solid grey;
+}
+
 .top-bar-section .right li:nth-child(2) {
   border-left: 1px solid grey;
   border-right: 1px solid grey;
@@ -109,6 +114,10 @@ width: 152px;
 .top-bar-section .right li:nth-child(3) {
   border-left: 1px solid grey;
   border-right: 1px solid grey;
+}
+
+.top-bar-section .right li:nth-child(4) {
+  border-left: 1px solid grey;
 }
 
 .social-networks {
