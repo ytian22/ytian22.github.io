@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
+  font-size: 100%;
   transition: 0.2s ease-out;
   transition-property: width, height;
   -webkit-touch-callout: none;
@@ -61,7 +62,7 @@ width: 152px;
   top: -2.7rem;
   left: 4.2rem;
   line-height: 1.2rem !important;
-  font-size: 1.6em !important;
+/*  font-size: 1.6em !important;*/
   color: white;
 }
 
@@ -75,13 +76,13 @@ width: 152px;
   left: 4.2rem;
   color: #d6d6d6;
   line-height: 2rem !important;
-  font-size: 1rem !important;
+/*  font-size: 1rem !important;*/
 }
 
 .top-bar-section .right li a{
     color: #d6d6d6;
 /*  line-height: 2rem !important;*/
-  font-size: 1rem !important;
+/*  font-size: 1rem !important;*/
 }
 
 .top-bar-section .right li a:active {
@@ -391,7 +392,7 @@ header {
 /* Título de la página en el header */
 #contenidoHeader h1 {
   font-weight: 100;
-  font-size: 5em;
+/*  font-size: 5em;*/
   color: #FFF;
   line-height: 0.8em;
   letter-spacing: -0.06em;
@@ -407,7 +408,7 @@ header {
 /* Subtítulo del header */
 #contenidoHeader h2 {
   font-weight: 300;
-  font-size: 1.5rem;
+/*  font-size: 1.5rem;*/
   color: #FFF;
   line-height: 0.8em;
   letter-spacing: -0.04em;
@@ -438,7 +439,7 @@ header {
 /* Elemento H1 de cada una de la secciones (su título) */
 .seccion {
   font-weight: 100;
-  font-size: 2.7em;
+/*  font-size: 2.7em;*/
   text-align: center;
   color: white;
 }
@@ -455,7 +456,7 @@ header {
 /* Texto de la sección 'Sobre mí' */
 #about p {
   font-weight: 300;
-  font-size: 1.1em;
+/*  font-size: 1.1em;*/
   padding: 1.2em;
   max-width: 790px;
   letter-spacing: 0.08em;
@@ -481,7 +482,7 @@ header {
 
 @media (max-width: 768px) {
   #contenidoHeader h1 {
-    font-size: 4em;
+/*    font-size: 4em;*/
   }
 
   .ornamentCont {
@@ -489,11 +490,11 @@ header {
   }
 
   #contenidoHeader h2 {
-    font-size: 1.2em;
+/*    font-size: 1.2em;*/
   }
 
   #about h1 {
-    font-size: 2.5em;
+/*    font-size: 2.5em;*/
   }
 }
 
@@ -568,7 +569,7 @@ header {
 }
 
 .timeline>li .timeline-image h4 {
-  font-size: 10px;
+/*  font-size: 10px;*/
   margin-top: 12px;
   line-height: 14px
 }
@@ -632,7 +633,7 @@ header {
     margin-left: -50px
   }
   .timeline>li .timeline-image h4 {
-    font-size: 13px;
+ /*   font-size: 13px;*/
     margin-top: 16px;
     line-height: 18px
   }
@@ -657,7 +658,7 @@ header {
     margin-left: -75px
   }
   .timeline>li .timeline-image h4 {
-    font-size: 18px;
+/*    font-size: 18px;*/
     margin-top: 30px;
     line-height: 26px
   }
