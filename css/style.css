@@ -469,7 +469,7 @@ header {
 /* Texto de la sección 'Sobre mí' */
 #about p {
   font-weight: 300;
-  font-size: 1.1em;
+  font-size: 1.5em;
   padding: 1.2em;
   max-width: 790px;
   letter-spacing: 0.08em;
@@ -636,6 +636,7 @@ header {
 .timeline .timeline-body>p,
 .timeline .timeline-body>ul {
   margin-bottom: 0
+  font-size: 1.5rem;
 }
 
 @media (min-width:768px) {
