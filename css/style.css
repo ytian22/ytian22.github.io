@@ -82,7 +82,7 @@ width: 152px;
 .top-bar-section .right li a{
     color: #d6d6d6;
   line-height: 2rem !important;
-  font-size: 1rem !important;
+  font-size: 1.2rem !important;
 }
 
 .top-bar-section .right li a:active {
@@ -103,6 +103,11 @@ width: 152px;
   }
 }
 .top-bar-section .right li:nth-child(2) {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.top-bar-section .right li:nth-child(3) {
   border-left: 1px solid grey;
   border-right: 1px solid grey;
 }
