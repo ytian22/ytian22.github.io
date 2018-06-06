@@ -813,6 +813,7 @@ header {
 /*  border: 1px solid #ffb600;*/
   border-radius: 6px;
   transition: all o 0.3s;
+  font-size: bold;
 }
 
 .container.works .content .cards .card .card-actions .view-demo:hover {
