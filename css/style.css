@@ -796,12 +796,13 @@ header {
 }
 
 .container.works .content .cards .card .card-actions .view-demo {
+  background-color: #b2b2b2;
   display: block;
   width: 50%;
   margin: 0 auto;
-  color: #ffb600;
-  padding: 5px 10px;
-  border: 1px solid #ffb600;
+  color: white;
+  padding: 7px 13px;
+/*  border: 1px solid #ffb600;*/
   border-radius: 6px;
   transition: all o 0.3s;
 }
