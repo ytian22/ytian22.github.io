@@ -1,67 +1,88 @@
 $(document).ready(function () {
   var data = [{
     id: 0,
-    title: "Tribute Page",
-    description: "A Tribute Page For Nandamuri Taraka Rama Rao.",
-    demoUrl: "https://codepen.io/vinaypuppal/full/JXJJaL/",
-    previewUrl: "https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_300/v1465247988/fcc/tribute-page-ui.png",
+    title: 'Web Application Development:<br>"LEGOIT.US"',
+    description: "Developed a web platform that provides users real-time LEGO services.<br><b>Tools: Python, MySQL, Flask, AWS, Selenium, HTML5, JavaScript, OpenCV.</b>",
+    demoUrl: "https://legoit.us/",
+    previewUrl: "img/legoit.png",
     category: "data"
   }, {
     id: 1,
-    title: "Random Quote Generator",
-    description: "A simple quote generator that you can tweet and share.",
-    demoUrl: "https://codepen.io/vinaypuppal/full/dMdxKR/",
-    previewUrl: "https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_300/v1465247983/fcc/random-quote-ui.png",
+    title: "Machine Learning:<br>Street-Parking Availability Prediction",
+    description: "Estimated spot availability with feature engineering and machine learning models.<br><b>Tools: Python, Scikit-Learn, XGBoost, ETL, Google Geocoding API, AWS S3, Github.</b>",
+    demoUrl: "https://github.com/ytian22/Street-Parking-Availability-Prediction",
+    previewUrl: "img/parking-lots.png",
     category: "data"
   }, {
     id: 2,
-    title: "Wiki Search",
-    description: "A useful app to search Wikipedia articles.",
-    demoUrl: "https://codepen.io/vinaypuppal/full/WwzxxR/",
-    previewUrl: "https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_300/v1465247982/fcc/wiki-search-ui.png",
+    title: "Distributed Computing & Warehousing:<br>Bike Share Demand Prediction",
+    description: "Predicted bike share demand with Spark MLlib and built an ETL pipeline for NoSQL data processing.<br><b>Tools: Python, PySpark, Spark MLlib, Random Forest, Amazon S3, MongoDB, Spark EC2 Cluster.</b>",
+    demoUrl: "https://github.com/ytian22/Bike-Share-Demand",
+    previewUrl: "img/bike.jpg",
     category: "data"
   }, {
     id: 3,
-    title: "Random Quote Generator",
-    description: "A simple quote generator that you can tweet and share.",
-    demoUrl: "https://codepen.io/vinaypuppal/full/dMdxKR/",
-    previewUrl: "https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_300/v1465247983/fcc/random-quote-ui.png",
+    title: "Machine Learning & NLP:<br>Movie Review Classification",
+    description: "Predicted IMDB movie review polarity in Python with GloVe word embedding and XGBoost model.<br><b>Tools: Python, Scikit-Learn, XGBoost, NLP, Spacy, NLTK.</b>",
+    demoUrl: "https://github.com/ytian22/Word-Embeddings",
+    previewUrl: "img/movie.jpg",
     category: "data2"
   }, {    
     id: 4,
-    title: "Tribute Page",
-    description: "A Tribute Page For Nandamuri Taraka Rama Rao.",
-    demoUrl: "https://codepen.io/vinaypuppal/full/JXJJaL/",
-    previewUrl: "https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_300/v1465247988/fcc/tribute-page-ui.png",
+    title: "Time Series Analysis:<br>Canada’s Bankruptcy Rate Forecast",
+    description: "Forecasted Canada’s monthly bankruptcy rate and achieved the lowest test RMSE of 0.0035.<br><b>Tools: R, Time Series Models (SARIMA, SARIMAX, Holt-Winters, VAR, VARX), GGplot.</b>",
+    demoUrl: "https://drive.google.com/drive/u/1/folders/1_dVRUV_y0H203m3dMgM7bVBB_VpK-iu5",
+    previewUrl: "img/bankruptcy.jpg",
     category: "data2"
   }, {
     id: 5,
-    title: "Wiki Search",
-    description: "A useful app to search Wikipedia articles.",
-    demoUrl: "https://codepen.io/vinaypuppal/full/WwzxxR/",
-    previewUrl: "https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_300/v1465247982/fcc/wiki-search-ui.png",
+    title: "Linear Regression:<br>House Price Prediction",
+    description: "Constructed exploratory modeling and predictive modeling to predict new house prices.<br><b>Tools: R, GGplot, Regression Models (OLS, Ridge, Lasso, Elastic Net).</b>",
+    demoUrl: "https://github.com/ytian22/House-Price-Prediction",
+    previewUrl: "img/house.jpg",    
     category: "data2"  
   }, {
     id: 6,
-    title: "Wiki Search",
-    description: "A useful app to search Wikipedia articles.",
-    demoUrl: "https://codepen.io/vinaypuppal/full/WwzxxR/",
-    previewUrl: "https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_300/v1465247982/fcc/wiki-search-ui.png",
+    title: "Analytics Ingestion Pipeline",
+    description: "Deployed a web application to accept, log, and process HTTP requests.<br><b>Tools: Python, Flask, AWS, Paramiko, NoSQL, Linux, Command Line, Crontab.</b>",
+    demoUrl: "https://github.com/ytian22/Data-Ingestion-Pipeline",
+    previewUrl: "img/pipeline.jpg",
     category: "data3"
   }, {
     id: 7,
-    title: "Tribute Page",
-    description: "A Tribute Page For Nandamuri Taraka Rama Rao.",
-    demoUrl: "https://codepen.io/vinaypuppal/full/JXJJaL/",
-    previewUrl: "https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_300/v1465247988/fcc/tribute-page-ui.png",
+    title: "Twitter Sentiment Analysis",
+    description: "Developed a web server to display tweets from a given user. Colored tweets by the sentiment scores.<br><b>Tools: Python, NLP, Bag-of-Words, HTML5, AWS, Flask, Twitter API, vaderSentiment.",
+    demoUrl: "https://github.com/ytian22/Twitter-Sentiment-Analysis",
+    previewUrl: "img/twitter.jpeg",
     category: "data3"
   }, {
     id: 8,
-    title: "Random Quote Generator",
-    description: "A simple quote generator that you can tweet and share.",
-    demoUrl: "https://codepen.io/vinaypuppal/full/dMdxKR/",
-    previewUrl: "https://res.cloudinary.com/vinaypuppal/image/upload/c_scale,w_300/v1465247983/fcc/random-quote-ui.png",
+    title: "Article Recommendation Engine",
+    description: "Built a web application to display and recommend BBC articles. Measured article similarities with GloVe word embedding.<br><b>Tools: Python, NLP, XML, AWS, Flask.",
+    demoUrl: "https://github.com/ytian22/Article-Recommendation-Engine",
+    previewUrl: "img/article.jpg",
     category: "data3"
+  }, {
+    id: 9,
+    title: "Search Engine Implementation",
+    description: "Implemented a search engine to display results in a browser window and navigate to documents.<br><b>Tools: Python, Indexing, Hashtable, HTML5.</b>",
+    demoUrl: "https://github.com/ytian22/Search-Engine-Implementation",
+    previewUrl: "img/search.jpg",
+    category: "data5"
+  }, {
+    id: 10,
+    title: "Interactive Visualization",
+    description: "Designed interactive visualization and provided analysis for Lending Club Loan data. <br><b>Tools: Python, Plotly.js, D3.js, HTML5.",
+    demoUrl: "https://ytian22.github.io/Lending-Club-Visualization/",
+    previewUrl: "img/loan.png",
+    category: "data5"
+  }, {
+    id: 11,
+    title: "Data Visualization Collection",
+    description: "A collection of all data visualization coursework.<br><b>Tools: Python, Plotly, Bokeh.",
+    demoUrl: "https://github.com/ytian22/Data-Visualization-Collection",
+    previewUrl: "img/collection.jpeg",
+    category: "data5"
   }];
 
   var frontend1 = data.filter(function (item) {
@@ -74,6 +95,10 @@ $(document).ready(function () {
 
   var frontend3 = data.filter(function (item) {
     return item.category === 'data3';
+  });
+
+  var frontend5 = data.filter(function (item) {
+    return item.category === 'data5';
   });
 
 
@@ -142,10 +167,21 @@ $(document).ready(function () {
     });
   }
 
+  function renderToDom5(data) {
+    data.forEach(function (item) {
+      var card = generateCard(item);
+      //render card to dom
+      //console.log(card);
+      $('.js-list5').append(card);
+    });
+  }
+
+
   //for intial rendering
   renderToDom(frontend1);
   renderToDom2(frontend2);
   renderToDom3(frontend3);
+  renderToDom5(frontend5);
 
 
   function clearDom() {

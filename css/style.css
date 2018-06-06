@@ -765,6 +765,11 @@ header {
   padding: 10px;
 }
 
+.container.works .content .cards .card .card-content b {
+  color: black;
+  font-size: bold;
+}
+
 .container.works .content .cards .card .card-actions {
   text-align: center;
   width: 100%;
