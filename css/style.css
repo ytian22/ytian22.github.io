@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
-  font-size: 100%;
   transition: 0.2s ease-out;
   transition-property: width, height;
   -webkit-touch-callout: none;
