@@ -17,6 +17,7 @@ body {
   overflow-x: hidden !important;
 }
 
+/*
 section {
   padding: 0 7px;
 }
@@ -25,6 +26,7 @@ section {
     padding: 0;
   }
 }
+*/
 
 /*Nav Bar
 *************/
@@ -433,10 +435,11 @@ header {
 
 #social-about-padding {
   background-color: #0A0618;
-  height: 3vh;
+ /* height: 3vh;*/
   width: 100vw;
-
 }
+
+
 /* Sección 'Sobre mí' */
 #about {
   background-color: #0A0618;
